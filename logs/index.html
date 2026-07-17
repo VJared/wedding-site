@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Best wishes for Jared and Kate, shared at their engagement party.">
+  <title>Best Wishes Logs</title>
+  <script>document.documentElement.classList.add('js')</script>
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f4f0e6;
+      --ink: #28506a;
+      --muted: #537187;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.1rem, 1.3vw, 1.3rem);
+      line-height: 1.65;
+      text-wrap: pretty;
+    }
+
+    .intro {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: 12vh max(1.5rem, 14vw);
+      text-align: center;
+    }
+
+    .intro-inner { max-width: 44rem; }
+
+    h1 {
+      margin: 0 0 1.25rem;
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: -0.035em;
+    }
+
+    .intro p { margin: 0; }
+
+    .arrow {
+      position: absolute;
+      bottom: max(1.5rem, 5vh);
+      left: 50%;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-right: 1px solid currentColor;
+      border-bottom: 1px solid currentColor;
+      transform: translateX(-50%) rotate(45deg);
+      animation: breathe 2.2s ease-in-out infinite;
+      transition: opacity 300ms ease;
+    }
+
+    .arrow.hidden { opacity: 0; }
+
+    .messages {
+      width: min(100%, 62rem);
+      margin: 0 auto;
+      padding: 8rem max(1.5rem, 12vw) 20vh;
+      text-align: center;
+    }
+
+    .message {
+      margin: 0 0 clamp(7rem, 18vh, 12rem);
+    }
+
+    .message:last-child { margin-bottom: 0; }
+
+    .message blockquote {
+      margin: 0;
+      font-size: clamp(1.3rem, 2.1vw, 1.85rem);
+      line-height: 1.55;
+    }
+
+    .message blockquote p { margin: 0 0 0.55em; }
+    .message blockquote p:last-child { margin-bottom: 0; }
+
+    .message footer {
+      margin-top: 1.35rem;
+      color: var(--muted);
+      font-size: 0.82em;
+      font-style: italic;
+      letter-spacing: 0.08em;
+    }
+
+    .js .message {
+      opacity: 0;
+      transform: translateY(1.5rem);
+      transition: opacity 900ms ease, transform 900ms ease;
+    }
+
+    .js .message.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @keyframes breathe {
+      0%, 100% { opacity: 0.3; transform: translate(-50%, -0.15rem) rotate(45deg); }
+      50% { opacity: 1; transform: translate(-50%, 0.3rem) rotate(45deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .arrow { animation: none; }
+      .js .message { transition: none; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <header class="intro">
+    <div class="intro-inner">
+      <h1>Logs</h1>
+      <p>At our engagement party on June 28th, 2026, attendees were asked to write “Best Wishes Logs,” a note to the couple written on brown cardboard and rolled up with twine. These are their messages...</p>
+    </div>
+    <span class="arrow" aria-hidden="true"></span>
+  </header>
+
+  <main class="messages">
+    <article class="message">
+      <blockquote><p>I hope to live long enough to see you two become an old needling couple</p></blockquote>
+      <footer>R A</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>Congratulations! I wish you the very best</p></blockquote>
+      <footer>K F</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>If you told 5th grade me that the girl who loved Twilight would be getting married to the kindest, funniest guy, and that she'd be there to celebrate them, she'd definitely think you were crazy!</p>
+        <p>Major congrats to you both. Sending SO much love to you as you start this next chapter.</p>
+      </blockquote>
+      <footer>L K</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>To Jate.</p>
+        <p>hello guys, please name your child after me.</p>
+      </blockquote>
+      <footer>P L</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>Congratulations you two!!! It's been so great getting to know you both over the past year.</p>
+        <p>We <u>will</u> win trivia eventually</p>
+      </blockquote>
+      <footer>M L</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>We wish you many years to come of love and understanding each other.</p></blockquote>
+      <footer>K+M</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>JARED + KATE</p>
+        <p>I love you guys. I hope you are best FRIENDS for life</p>
+      </blockquote>
+      <footer>S C</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>I hope every toilet you use has a bidet.</p>
+        <p>Forever.</p>
+        <p>Just like your love</p>
+      </blockquote>
+      <footer>Z M</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>Jared + Kate</p>
+        <p>I've been so lucky to know both of you, and it makes me so happy that y'all have found love with each other.</p>
+        <p>I hope the best for you and your wedding/marriage, and I know y'all will be great.</p>
+        <p>Much love,</p>
+      </blockquote>
+      <footer>P L</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>Wishing you...<br>Lots of travel &amp; Love!</p></blockquote>
+      <footer>Anonymous</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>LOVE YOU GUYS</p></blockquote>
+      <footer>J V</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>hello gamers!</p>
+        <p>I hope you both cherish each other in your strongest and weakist moments.</p>
+      </blockquote>
+      <footer>P L</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>Conjarts Jarte and Kate :) ! !</p>
+        <p>I'm super happy for you all and excited for you as you start the next chapter!</p>
+        <p>Much love!</p>
+      </blockquote>
+      <footer>N F</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>Wishing for...</p>
+        <p>Your first born named after me</p>
+      </blockquote>
+      <footer>E S</footer>
+    </article>
+
+    <article class="message">
+      <blockquote>
+        <p>I'm so so so happy for y'all and CANNOT WAIT for your wedding.</p>
+        <p>I'm so happy that I've been able to watch yall grow as a couple over the past few years!!!</p>
+        <p>Y'all truly are perfect for each other - Love you both so much!</p>
+      </blockquote>
+      <footer>A G</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>Don't go to bed mad...<br>But if you do just Kiss and make up in the morning ♡</p></blockquote>
+      <footer>Anonymous</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>Congrats!<br>Stay together forever ♡ you are awesome!</p></blockquote>
+      <footer>H+S</footer>
+    </article>
+
+    <article class="message">
+      <blockquote><p>KATE</p></blockquote>
+      <footer>Anonymous</footer>
+    </article>
+  </main>
+
+  <script>
+    const arrow = document.querySelector('.arrow');
+    const messages = document.querySelectorAll('.message');
+
+    addEventListener('scroll', () => arrow.classList.toggle('hidden', scrollY > 8), { passive: true });
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.08 });
+
+      messages.forEach(message => observer.observe(message));
+    } else {
+      messages.forEach(message => message.classList.add('visible'));
+    }
+  </script>
+</body>
+</html>
